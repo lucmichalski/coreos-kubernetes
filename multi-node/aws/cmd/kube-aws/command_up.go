@@ -209,6 +209,8 @@ func initTLS(cfg *cluster.Config, dir string) (*cluster.TLSConfig, error) {
 		DNSNames: []string{
 			"*.*.compute.internal", // *.<region>.compute.internal
 			"*.ec2.internal",       // for us-east-1
+			"*.blippar.com", // blippar
+			".eu-central-1.compute.internal", // europe central 1
 		},
 	}
 	if err := initTLSClient(workerConfig, caCert, caKey, workerKeyPath, workerCertPath); err != nil {

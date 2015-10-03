@@ -491,13 +491,13 @@ func StackTemplateBody(defaultArtifactURL string) (string, error) {
 
 	par[parNameControllerInstanceType] = map[string]interface{}{
 		"Type":        "String",
-		"Default":     "m3.medium",
+		"Default":     "m4.10xlarge",
 		"Description": "EC2 instance type used for each controller instance",
 	}
 
 	par[parNameWorkerInstanceType] = map[string]interface{}{
 		"Type":        "String",
-		"Default":     "m3.medium",
+		"Default":     "m4.10xlarge",
 		"Description": "EC2 instance type used for each worker instance",
 	}
 
