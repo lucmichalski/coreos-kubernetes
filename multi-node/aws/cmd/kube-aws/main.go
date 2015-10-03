@@ -1,4 +1,4 @@
-package main
+package main // import "github.com/lucmichalski/kube-aws"
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/spf13/cobra"
 
-	"github.com/coreos/coreos-kubernetes/multi-node/aws/pkg/cluster"
+	"github.com/lucmichalski/coreos-kubernetes/multi-node/aws/pkg/cluster"
 )
 
 var (
